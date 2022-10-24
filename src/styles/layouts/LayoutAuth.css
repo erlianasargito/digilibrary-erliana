@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.layout-login-wrapper{
+    display: flex;
+    height: 100vh;
+}
+
+.layout-login-wrapper .left{
+    width: 55%;
+    background-image: url('../../assets/img/digilibrary-background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left h1{
+    margin: 30px;
+}
+
+.layout-login-wrapper .right{
+    flex: 1;
+}
