@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.detail-wrapper{
+    display: flex;
+    height: 100vh;
+}
+
+.detail-wrapper .above{
+    height: 55%;
+    background-image: url('../../assets/img/digilibrary-background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

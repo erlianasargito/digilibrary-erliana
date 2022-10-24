@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import DetailBook from './detailBook'
 import '../../styles/components/CardStyle.css'
+import { Link } from 'react-router-dom'
 
 function Card() {
+    const [book] = useState(DetailBook)
   return (
     <>
     <h1>List Books</h1>
+    
     <div className='card-wrapper'>
-        {DetailBook.map((item) => (
+        {book.map((item) => (
             <div className='card'>
+                <Link to={'/DetailBooks/' + item.id}>
             <div className="img-wrapper">
                 <img src={item.img}/>
             </div>
@@ -18,9 +22,7 @@ function Card() {
             <div className="card-content">
                 <p>{item.description}</p>
             </div>
-            <div className="button">
-            <button><a>See more</a></button>
-            </div>
+            </Link>
             </div>
         ))}
     </div>
